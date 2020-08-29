@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "private": true,
-  // "proxy": "http://localhost:3001/",
+  "proxy": "http://localhost:3001/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
@@ -18,9 +18,9 @@
     "react-scripts": "3.4.3"
   },
   "scripts": {
-    "start": "npm run start:prod",
+    "start": "npm run start:prod || npm run start:dev",
     "start:prod": "node server.js",
-    // "start:dev": "npm run client",
+    "start:dev": "npm run client",
     "client": "cd client && npm run start",
     "install": "cd client && npm install",
     "build": "cd client && npm run build",
@@ -44,12 +44,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cojo12/googlebooks.git"
+    "url": "git+https://github.com/Mirandor/googlebooks.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/cojo12/googlebooks/issues"
+    "url": "https://github.com/Mirandor/googlebooks/issues"
   },
-  "homepage": "https://github.com/cojo12/googlebooks#readme"
-} 
+  "homepage": "https://github.com/Mirandor/googlebooks#readme"
+}
